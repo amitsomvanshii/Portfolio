@@ -20,7 +20,6 @@ function Skills() {
 
       {/* ✅ ICON SKILLS (Main Attractive Part) */}
       <h3 className="skill-title">Core Technical Skills</h3>
-
       <div className="icon-skill-grid">
   {/* ✅ Row 1 (6 Skills) */}
   <div className="icon-skill-card"><FaPython /><p>Python</p></div>
@@ -56,11 +55,8 @@ function Skills() {
         </div>
 
         <div className="skill-block">
-          <h4>Frameworks & Tools</h4>
+          <h4>Tools</h4>
           <ul>
-            <li>Spring Boot</li>
-            <li>Hibernate</li>
-            <li>MongoDB</li>
             <li>Postman</li>
             <li>VS Code</li>
           </ul>
@@ -69,8 +65,6 @@ function Skills() {
         <div className="skill-block">
           <h4>Core Concepts</h4>
           <ul>
-            <li>OOPs</li>
-            <li>DSA</li>
             <li>REST APIs</li>
           </ul>
         </div>
