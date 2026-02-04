@@ -24,7 +24,7 @@ function Hero() {
         <div className="stats-box">
           <div className="stat-card">
             <h3>3</h3>
-            <p><li><a href="projects">Projects</a></li></p>
+            <p><li><a href="#projects">Projects</a></li></p>
           </div>
         </div>
 
