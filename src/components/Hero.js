@@ -1,6 +1,6 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
-import profile from "../assets/profile.jpg";
+import abcde from "../assets/abcde.jpg";
 
 function Hero() {
   return (
@@ -23,18 +23,8 @@ function Hero() {
         {/* KPI Stats */}
         <div className="stats-box">
           <div className="stat-card">
-            <h3>5+</h3>
-            <p>Projects</p>
-          </div>
-
-          <div className="stat-card">
-            <h3>Python</h3>
-            <p>Analytics</p>
-          </div>
-
-          <div className="stat-card">
-            <h3>SQL</h3>
-            <p>Insights</p>
+            <h3>3</h3>
+            <p><li><a href="projects">Projects</a></li></p>
           </div>
         </div>
 
@@ -44,7 +34,7 @@ function Hero() {
 
       {/* Right Profile */}
       <div className="hero-image">
-        <img src={profile} alt="profile" />
+        <img src={abcde} alt="abcde" />
       </div>
     </div>
   );

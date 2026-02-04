@@ -8,18 +8,18 @@ function Projects() {
       <div className="project-cards">
 
         <div className="card">
-          <h3>Customer Churn Analysis</h3>
-          <p>Predicting churn using Machine Learning with accuracy & F1-score.</p>
+          <h3>World University Ranking</h3>
+          <p>Statistical Analysis | Python</p>
         </div>
 
         <div className="card">
-          <h3>Online Examination System</h3>
-          <p>Java + MySQL based exam portal with admin and student modules.</p>
+          <h3>Orion Hardware </h3>
+          <p> Interactive Tableau Sales Dashboard  | MYSQL, Tableau</p>
         </div>
 
         <div className="card">
-          <h3>Ecommerce Recommendation System</h3>
-          <p>Product recommendation engine using user behavior and filtering.</p>
+          <h3>Smart Cart</h3>
+          <p>Product Suggestion Web Application | Python, ML, HTML, CSS</p>
         </div>
 
       </div>

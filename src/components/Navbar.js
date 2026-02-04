@@ -16,29 +16,8 @@ function Navbar({ darkMode, setDarkMode }) {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
-      {/* ✅ Theme Selector */}
-      {/* ✅ Theme Toggle Switch */}
-<div className="toggle-container">
-  <span className="mode-text">Light</span>
-
-  <label className="switch">
-    <input
-  type="checkbox"
-  checked={darkMode}
-  onChange={() => setDarkMode(!darkMode)}
-/>
-
-    <span className="slider"></span>
-  </label>
-
-  <span className="mode-text">Dark</span>
-</div>
-
-
-
       {/* Resume Button */}
-      <a href="/resume.pdf" download className="resume-btn">
+      <a href="/Singh_Amit_Resume.pdf" download className="resume-btn">
         Resume
       </a>
 
