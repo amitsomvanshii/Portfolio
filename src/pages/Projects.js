@@ -19,7 +19,16 @@ function Projects() {
 
         <div className="card">
           <h3>Smart Cart</h3>
-          <p>Product Suggestion Web Application | Python, ML, HTML, CSS</p>
+          <p>
+           <b> Product Suggestion Web Application | Python, ML, HTML, CSS :</b>{" "}
+           <a
+           href="https://smartcart-lloj.onrender.com"
+           target="_blank"
+           rel="noreferrer"
+           className="contact-link"
+            >
+            </a>
+          </p>
         </div>
 
       </div>
