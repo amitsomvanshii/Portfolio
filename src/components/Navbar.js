@@ -17,7 +17,7 @@ function Navbar({ darkMode, setDarkMode }) {
         <li><a href="#contact">Contact</a></li>
       </ul>
       {/* Resume Button */}
-      <a href="/Amit_singh_Data_Analyst_Resume.pdf" download className="resume-btn">
+      <a href="/Amit_Singh_Data_Analyst_Resume.pdf" download className="resume-btn">
         Resume
       </a>
 
