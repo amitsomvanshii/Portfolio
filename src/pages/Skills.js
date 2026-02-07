@@ -3,7 +3,6 @@ import {
   FaPython,
   FaHtml5,
   FaCss3Alt,
-  FaBootstrap,
   FaDatabase,
   FaGithub,
   FaChartBar,
@@ -46,17 +45,12 @@ function Skills() {
 
         <div className="icon-skill-card">
           <FaHtml5 />
-          <p>HTML5</p>
+          <p>HTML</p>
         </div>
 
         <div className="icon-skill-card">
           <FaCss3Alt />
-          <p>CSS3</p>
-        </div>
-
-        <div className="icon-skill-card">
-          <FaBootstrap />
-          <p>Bootstrap</p>
+          <p>CSS</p>
         </div>
       </div>
 
@@ -81,18 +75,7 @@ function Skills() {
           <h4>Tools & Platforms</h4>
           <ul>
             <li>VS Code</li>
-            <li>Postman</li>
             <li>Jupyter Notebook</li>
-          </ul>
-        </div>
-
-        {/* Concepts */}
-        <div className="skill-block">
-          <h4>Core Concepts</h4>
-          <ul>
-            <li>REST API Integration</li>
-            <li>Database Management Systems</li>
-            <li>Version Control</li>
           </ul>
         </div>
 
