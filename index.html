@@ -451,11 +451,27 @@ Performance: Optimized the ML model loading process using Pickle, ensuring that 
 								visualize research and teaching performance trends.</p>
 							<button class="btn btn-case-study view-case-study"
 								data-title="University Ranking Statistical Analysis"
-								data-description="A comprehensive statistical investigation into the drivers of global academic excellence. This project analyzes a decade of university performance data to uncover hidden correlations between research funding, faculty-to-student ratios, and international reputation scores."
-								data-story="Using Python’s Seaborn and Matplotlib libraries, I conducted a deep Exploratory Data Analysis (EDA) to identify outliers and multi-collinearity. I applied correlation heatmaps to see how research output impacts overall ranking and used Power BI to build an interactive summary for educational policymakers to compare regions."
-								data-problem="Academic researchers found it difficult to compare cross-continental performance trends over multiple years."
-								data-tech="Python (Pandas/Matplotlib) for deep statistical EDA and Power BI for the executive summary dashboard."
-								data-result="Visualized 10 years of data trends, revealing key performance drivers in research output across top 1000 universities.">
+								data-description="Your project is a comprehensive analysis of World University Rankings, utilizing two primary datasets: the Times Higher Education rankings and the Center for World University Rankings (CWUR). It tracks the performance of thousands of institutions globally from 2011 to 2016, evaluating them across diverse dimensions such as teaching quality, research influence, and international outlook."
+								data-story="Educational institutions, policymakers, and students often face a data overload when trying to understand what makes a university truly world-class. The problem this project addresses is identifying the hidden correlations between institutional metrics. It answers critical questions like:
+
+Does high research output guarantee a top-tier rank?
+How much does industry income actually influence global standing?
+Which countries are consistently over-performing in higher education?"
+								data-problem="The technical journey of this project followed a rigorous data science workflow:
+
+Data Wrangling: You performed significant cleaning, handling complex string formats (like removing % and ,), and coercing data into numeric formats for analysis.
+Imputation Strategy: Missing values in critical columns like income and num_students were handled using median imputation to maintain statistical integrity.
+Refinement: You standardized the world_rank column, transforming range-based strings (e.g., 301-350) into usable numerical data.
+Statistical Analysis: You executed a Pearson Correlation analysis, which mathematically proved that Research and Teaching are the strongest drivers of a university's total score.
+Interactive Evolution: The project evolved from static Jupyter Notebooks into a premium web dashboard, making the data accessible and interactive for non-technical users."
+								data-tech="Data Science Engine: Python, Pandas, and NumPy for heavy-duty data processing.
+Environment: Jupyter Notebooks for exploratory analysis.
+Business Intelligence: Power BI (.pbix) for professional-grade reporting.
+Web Frontend: Vite, Vanilla JavaScript, and modern CSS (implementing Glassmorphism for a premium feel).
+Visualizations: Chart.js for interactive graphs and PapaParse for real-time CSV data handling."
+								data-result="Key Insight: Discovered that Research influence (0.92 correlation) and Teaching quality (0.91 correlation) are the most critical factors for ranking, far outweighing international outlook.
+Global Benchmarking: Successfully identified that while the USA and UK lead in institution counts, countries like Singapore and China show remarkably high average global scores.
+Integrated Platform: You have produced a multi-layered result consisting of a cleaned dataset, a detailed scientific notebook, a Power BI report, and a high-end interactive web application.">
 								View Case Study
 							</button>
 						</div>
