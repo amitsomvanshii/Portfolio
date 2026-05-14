@@ -349,11 +349,22 @@
 								mapping using predictive analytics and machine learning.</p>
 							<button class="btn btn-case-study view-case-study"
 								data-title="AI Crime Prediction & Safety Map"
-								data-description="SafeGuard Pro is an advanced AI platform designed to transform public safety through predictive intelligence. By analyzing multi-dimensional datasets including historical crime reports, demographics, and weather patterns, the platform creates a living 'Safety Map' for citizens and law enforcement."
-								data-story="The system utilizes a Scikit-learn backend for risk classification and a custom-built geospatial engine. I implemented a Random Forest regressor to predict incident probability and integrated a Leaflet.js frontend to visualize 'heat zones' in real-time. Data was cleaned using Pandas to handle null values in legacy police records."
-								data-problem="Law enforcement agencies struggle with real-time risk assessment and proactive patrolling due to fragmented data."
-								data-tech="Python for predictive modeling (Random Forest/LSTM), Leaflet.js for interactive mapping, and SQL for managing historical crime records."
-								data-result="Enabled a 20% faster emergency response time and accurately predicted high-risk zones with 85% precision.">
+								data-description="SafeGuard Pro is a state-of-the-art AI-driven urban safety ecosystem designed to transform how citizens navigate and interact with their environment. By merging historical crime data with real-time predictive modeling, the platform provides proactive safety intelligence—from Safe Path navigation to tactical emergency response tools—ensuring that safety is a calculated choice rather than a reactive hope."
+								data-story="The heart of the platform is a sophisticated v2.4-Ensemble Engine. I developed a hybrid machine learning architecture that combines Random Forest and XGBoost to calculate localized risk scores with 90%+ precision. To handle the temporal nature of crime, I implemented an LSTM (Long Short-Term Memory) neural network that forecasts safety trends across 24-hour cycles.
+
+One of the most complex challenges was building AI Explainability. Using SHAP (SHapley Additive exPlanations), the system doesn't just give a score; it explains why (e.g., High score due to historical frequency at this hour). For navigation, I integrated an OSRM (Open Source Routing Machine) and modified its cost function to prioritize Safety Corridors over the fastest route, creating a first-of-its-kind Safest Path algorithm."
+								data-problem="Traditional navigation tools prioritize speed over security, often leading users through high-risk areas to save a few seconds. Simultaneously, most safety apps are reactive, relying on user action after a threat is detected. There is a critical gap in tools that empower users with preemptive intelligence—the ability to visualize, anticipate, and avoid urban risks before they materialize."
+								data-tech="Backend: FastAPI (Python), SQLAlchemy, SQLite/Spatialite (for geospatial queries).
+AI/ML: Scikit-Learn, XGBoost, TensorFlow (Keras), SHAP (Explainability), Pandas.
+Frontend: React.js, Vite, Tailwind CSS, Framer Motion (for premium UI animations).
+Mapping: Leaflet.js, OpenStreetMap API, OSRM.
+Security: OTP Authentication, SMTP Proxy for encrypted emergency alerts."
+								data-result="SafeGuard Pro successfully translates complex data into life-saving features:
+
+Dynamic Risk Heatmaps: Real-time visualization of crime density and projected risk zones.
+AI Voice Shield & Tactical SOS: Hands-free emergency triggers that dispatch live GPS coordinates to trusted contacts.
+Smart Routing: Dual-mode navigation offering Fastest vs. Safest paths.
+Enterprise Insights: Dedicated modules for fleet tracking, property safety valuation, and shift optimization for workers in high-risk zones.">
 								View Case Study
 							</button>
 						</div>
