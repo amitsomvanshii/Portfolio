@@ -428,10 +428,25 @@ Performance: Optimized the ML model loading process using Pickle, ensuring that 
 								for a retail business using SQL and Power BI.</p>
 							<button class="btn btn-case-study view-case-study" data-title="Orion Hardware Analytics"
 								data-description="This project involved building an end-to-end business intelligence solution for Orion Hardware, a regional retail chain. The goal was to consolidate siloed sales data into a single source of truth for executive decision-making and inventory control."
-								data-story="I began with extensive SQL querying to extract and transform data from multiple transactional databases. In Power BI, I utilized DAX to create advanced measures like Year-over-Year (YoY) growth and rolling averages. The final dashboard features cross-filtering and drill-down capabilities to allow managers to investigate specific store performance."
-								data-problem="Business managers were using static reports that didn't show real-time profit trends or inventory gaps."
-								data-tech="Power BI for visualization, SQL for complex data transformation (ETL), and DAX for custom business metrics."
-								data-result="Saved managers 10+ hours of manual reporting per week and identified a 5% leak in operational expenses.">
+								data-story="Orion Hardware is a Business Intelligence (BI) and Data Analytics project focused on sales performance and operational efficiency. It transforms raw sales data from a hardware superstore into actionable insights through SQL-based data modeling and an interactive PowerBI dashboard."
+								data-problem="Hardware retailers often struggle with Data Silos-where sales, profits, and regional performance are recorded but not connected.
+
+The Challenge: Identifying which product categories are underperforming or which regions have the highest discount-to-profit leakages.
+The Need: A centralized system to visualize total sales vs. total profit across different segments (Consumer, Corporate, Home Office)."
+								data-tech="Data Extraction & Cleaning: The project begins with a superstore_db database where raw sales_data is ingested.
+SQL Modeling: A series of optimized SQL queries (sales_analysis_queries.sql) are used to aggregate data. These queries calculate:
+Region-wise revenue distribution.
+Category-wise profit margins.
+The direct impact of discounts on the bottom line.
+Visualization: The processed data is then linked to a PowerBI Desktop (.pbix) file, which creates a dynamic, multi-page dashboard.
+💻 The Tech Stack
+Database: MySQL / SQL Server (used for data structuring and extraction).
+Analytics: PowerBI (for DAX calculations, data modeling, and visual storytelling).
+Documentation: PDF-based reports for executive summaries.
+Scripting: SQL for backend data manipulation."
+								data-result="Interactive Dashboard: A live environment where users can filter by Region or Category to see real-time profit trends.
+Performance Metrics: Clear visibility into the top-performing segments (e.g., Corporate vs. Home Office).
+Strategic Insights: A data-backed understanding of how discount strategies affect overall profitability, allowing for better inventory and pricing decisions.">
 								View Case Study
 							</button>
 						</div>
