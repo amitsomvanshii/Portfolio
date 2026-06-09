@@ -163,6 +163,320 @@ h1, h2, h3, h4, .navbar-brand {
     color: #fff !important;
 }
 
+/* ===== ABOUT ME SECTION ENHANCEMENTS ===== */
+
+.about-section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.about-section-label i {
+    font-size: 12px;
+}
+
+.about-highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.about-highlight-item:hover {
+    background: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.15);
+    transform: translateX(4px);
+}
+
+.about-highlight-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.about-highlight-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.about-highlight-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.about-author {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+/* Analyst Traits Chips */
+.about-traits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.about-trait-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.about-trait-chip i {
+    color: var(--accent-color);
+    font-size: 11px;
+    transition: all 0.3s ease;
+}
+
+.about-trait-chip:hover {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.25);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.12);
+}
+
+.about-trait-chip:hover i {
+    transform: scale(1.2);
+}
+
+/* ===== ABOUT HERO CARD — New Full-Width Layout ===== */
+
+.about-hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 48px 48px 36px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero-card::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Photo + glow ring */
+.about-hero-photo-wrap {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.about-hero-glow-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    z-index: 0;
+    animation: heroRingPulse 3s ease-in-out infinite;
+}
+
+@keyframes heroRingPulse {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50%       { opacity: 1;   transform: scale(1.06); }
+}
+
+.about-hero-photo {
+    position: relative;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg-color);
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.35);
+}
+
+.about-hero-badge {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-gradient);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+    letter-spacing: 0.5px;
+}
+
+/* Identity */
+.about-hero-identity {
+    margin-bottom: 16px;
+}
+
+.about-hero-name {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.about-hero-role {
+    font-size: 14px;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.about-hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.about-hero-meta span {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.about-hero-meta i {
+    color: var(--accent-color);
+    font-size: 12px;
+}
+
+/* Bio */
+.about-hero-bio {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    max-width: 680px;
+    margin: 0 auto 28px;
+}
+
+/* Stats row */
+.about-stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 16px 32px;
+    flex-wrap: wrap;
+}
+
+.about-stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.about-stat-num {
+    font-size: 26px;
+    font-weight: 800;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.about-stat-lbl {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 4px;
+}
+
+.about-stat-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* 3-column info grid */
+.about-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-info-panel {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 24px 20px;
+    transition: all 0.35s ease;
+}
+
+.about-info-panel:hover {
+    background: rgba(168, 85, 247, 0.04);
+    border-color: rgba(168, 85, 247, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.08);
+}
+
+@media (max-width: 768px) {
+    .about-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-hero-card {
+        padding: 36px 24px 28px !important;
+    }
+    .about-stat-block {
+        padding: 0 14px;
+    }
+    .about-stats-row {
+        padding: 14px 16px;
+    }
+}
+
 /* Technical Skills Section */
 .skill-mf {
     padding-top: 10px;
@@ -393,4 +707,499 @@ h1, h2, h3, h4, .navbar-brand {
 
 #globe-container:active {
     cursor: grabbing;
+}
+
+/* --- Modern Structural Enhancements --- */
+
+/* Timeline Layout */
+.timeline-container {
+    position: relative;
+    border-left: 2px solid rgba(168, 85, 247, 0.3);
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -41px; /* 30px padding + 15px margin - icon radius offset */
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    border: 4px solid var(--bg-color);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.timeline-item:hover .timeline-icon {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.9);
+}
+
+/* Tech Badges / Pills */
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.tech-badge {
+    background: rgba(168, 85, 247, 0.08);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    color: #dfd8ff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: rgba(168, 85, 247, 0.2);
+    border-color: rgba(168, 85, 247, 0.5);
+    color: #fff;
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.29);
+    transform: translateY(-1px);
+}
+
+/* Skills Cards Spacing & Interactivity */
+.skill-mf .progress-bar {
+    transition: width 1.5s cubic-bezier(0.1, 0.8, 0.2, 1) !important;
+}
+
+/* Form Styling & Glows */
+.contact-form .form-control {
+    transition: all 0.3s ease !important;
+}
+
+.contact-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2) !important;
+    border-color: rgba(168, 85, 247, 0.5) !important;
+    outline: none !important;
+}
+
+/* Custom list items for job cards */
+.resume-wrap ul li span {
+    font-size: 14px;
+}
+
+.resume-wrap ul li {
+    font-size: 14px;
+}
+
+/* Modern Technical Skills Styling */
+.skill-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--primary-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-item:hover {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+}
+
+.skill-item:hover::before {
+    opacity: 1;
+}
+
+.skill-icon-wrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-item:hover .skill-icon-wrap {
+    background: var(--primary-gradient);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.skill-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+/* Wrapping Tech Skills Pills */
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.skill-badge {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    color: #dfd8ff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.skill-badge i {
+    font-size: 14px;
+    margin-right: 8px;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+    color: #fff;
+}
+
+.skill-badge:hover i {
+    transform: scale(1.2);
+}
+
+/* Modern Education Cards styling */
+.education-card {
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, transparent 50%, rgba(168, 85, 247, 0.05) 50%);
+    border-top-right-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15);
+    border-color: rgba(168, 85, 247, 0.4) !important;
+}
+
+.education-card:hover::before {
+    background: linear-gradient(135deg, transparent 50%, rgba(168, 85, 247, 0.15) 50%);
+}
+
+.edu-icon-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--accent-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.education-card:hover .edu-icon-wrap {
+    background: var(--primary-gradient);
+    color: #fff;
+    transform: rotate(-10deg) scale(1.1);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
+}
+
+.education-card h2 {
+    transition: color 0.3s ease;
+}
+
+.education-card:hover h2 {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Job Type Badges in Resume Cards */
+.job-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.job-badge.full-time {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #a5b4fc;
+}
+
+.job-badge.freelance {
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    color: #dfd8ff;
+}
+
+/* Larger education card padding */
+.education-card.glass-card {
+    padding: 30px 30px;
+    min-height: 230px;
+}
+
+/* ===== EDUCATION LEVEL BANNER ===== */
+
+.edu-level-banner {
+    margin-bottom: 6px;
+}
+
+.edu-type-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.edu-type-badge.postgraduate {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15));
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    color: #c4b5fd;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.edu-type-badge.undergraduate {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(52, 211, 153, 0.12));
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #6ee7b7;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.12);
+}
+
+/* Postgraduate card accent */
+.edu-postgraduate.education-card {
+    border-top: 3px solid #6366f1 !important;
+    background: linear-gradient(160deg, rgba(99, 102, 241, 0.05) 0%, rgba(168, 85, 247, 0.03) 100%) !important;
+}
+
+.edu-postgraduate.education-card:hover {
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2) !important;
+    border-color: rgba(99, 102, 241, 0.5) !important;
+}
+
+.edu-postgraduate.education-card:hover h2 {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Undergraduate card accent */
+.edu-undergraduate.education-card {
+    border-top: 3px solid #10b981 !important;
+    background: linear-gradient(160deg, rgba(16, 185, 129, 0.05) 0%, rgba(52, 211, 153, 0.03) 100%) !important;
+}
+
+.edu-undergraduate.education-card:hover {
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.18) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+}
+
+.edu-undergraduate.education-card:hover h2 {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Edu stat pills */
+.edu-stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.edu-stat-pill:hover {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.2);
+    color: #fff;
+}
+
+.edu-stat-pill strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.edu-stat-green.edu-stat-pill:hover {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* ===== PROJECT CARD GRADIENT THEMES ===== */
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 0 0 24px 24px;
+    transition: height 0.4s ease;
+    opacity: 0.8;
+}
+
+.project-card:hover::after {
+    height: 5px;
+    opacity: 1;
+}
+
+/* Project 1: SafeGuard Pro — AI/Safety — red-orange (danger/alert theme) */
+.project-ai {
+    background: linear-gradient(160deg, rgba(239, 68, 68, 0.06) 0%, rgba(251, 146, 60, 0.04) 100%) !important;
+    border: 1px solid rgba(239, 68, 68, 0.15) !important;
+}
+.project-ai::after {
+    background: linear-gradient(90deg, #ef4444, #f97316, #fbbf24);
+}
+.project-ai:hover {
+    border-color: rgba(239, 68, 68, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(239, 68, 68, 0.12) !important;
+    background: linear-gradient(160deg, rgba(239, 68, 68, 0.1) 0%, rgba(251, 146, 60, 0.07) 100%) !important;
+}
+
+/* Project 2: MC Stays — Accommodation — teal-cyan (hospitality/comfort theme) */
+.project-accommodation {
+    background: linear-gradient(160deg, rgba(20, 184, 166, 0.06) 0%, rgba(6, 182, 212, 0.04) 100%) !important;
+    border: 1px solid rgba(20, 184, 166, 0.15) !important;
+}
+.project-accommodation::after {
+    background: linear-gradient(90deg, #14b8a6, #06b6d4, #38bdf8);
+}
+.project-accommodation:hover {
+    border-color: rgba(20, 184, 166, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(20, 184, 166, 0.12) !important;
+    background: linear-gradient(160deg, rgba(20, 184, 166, 0.1) 0%, rgba(6, 182, 212, 0.07) 100%) !important;
+}
+
+/* Project 3: Smart Cart — E-commerce/ML — emerald-lime (growth/commerce theme) */
+.project-ecommerce {
+    background: linear-gradient(160deg, rgba(16, 185, 129, 0.06) 0%, rgba(132, 204, 22, 0.04) 100%) !important;
+    border: 1px solid rgba(16, 185, 129, 0.15) !important;
+}
+.project-ecommerce::after {
+    background: linear-gradient(90deg, #10b981, #22c55e, #84cc16);
+}
+.project-ecommerce:hover {
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.12) !important;
+    background: linear-gradient(160deg, rgba(16, 185, 129, 0.1) 0%, rgba(132, 204, 22, 0.07) 100%) !important;
+}
+
+/* Project 4: Orion Hardware — Business Analytics — amber-yellow (enterprise/data theme) */
+.project-analytics {
+    background: linear-gradient(160deg, rgba(245, 158, 11, 0.06) 0%, rgba(234, 179, 8, 0.04) 100%) !important;
+    border: 1px solid rgba(245, 158, 11, 0.15) !important;
+}
+.project-analytics::after {
+    background: linear-gradient(90deg, #f59e0b, #eab308, #facc15);
+}
+.project-analytics:hover {
+    border-color: rgba(245, 158, 11, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.12) !important;
+    background: linear-gradient(160deg, rgba(245, 158, 11, 0.1) 0%, rgba(234, 179, 8, 0.07) 100%) !important;
+}
+
+/* Project 5: University Ranking — Research/Education — indigo-violet (academic theme) */
+.project-research {
+    background: linear-gradient(160deg, rgba(99, 102, 241, 0.07) 0%, rgba(168, 85, 247, 0.05) 100%) !important;
+    border: 1px solid rgba(99, 102, 241, 0.15) !important;
+}
+.project-research::after {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7);
+}
+.project-research:hover {
+    border-color: rgba(99, 102, 241, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.14) !important;
+    background: linear-gradient(160deg, rgba(99, 102, 241, 0.11) 0%, rgba(168, 85, 247, 0.08) 100%) !important;
+}
+
+/* Project 6: Revenue Dashboard — Finance/Revenue — rose-pink (financial/revenue theme) */
+.project-revenue {
+    background: linear-gradient(160deg, rgba(236, 72, 153, 0.06) 0%, rgba(244, 63, 94, 0.04) 100%) !important;
+    border: 1px solid rgba(236, 72, 153, 0.15) !important;
+}
+.project-revenue::after {
+    background: linear-gradient(90deg, #ec4899, #f43f5e, #fb7185);
+}
+.project-revenue:hover {
+    border-color: rgba(236, 72, 153, 0.4) !important;
+    box-shadow: 0 15px 40px rgba(236, 72, 153, 0.12) !important;
+    background: linear-gradient(160deg, rgba(236, 72, 153, 0.1) 0%, rgba(244, 63, 94, 0.07) 100%) !important;
 }
