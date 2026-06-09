@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/custom.css?v=2.7">
+	<link rel="stylesheet" href="css/custom.css?v=2.8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
@@ -106,6 +106,7 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#hackathon-section" class="nav-link"><span>Hackathons</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
@@ -191,12 +192,6 @@
 							<div class="about-stat-block">
 								<span class="about-stat-num">2×</span>
 								<span class="about-stat-lbl">Merit Award</span>
-							</div>
-							<div class="about-stat-divider"></div>
-							<div class="about-stat-block">
-								<span class="about-stat-num">2+</span>
-								<span class="about-stat-lbl">Years Exp.</span>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -565,11 +560,7 @@
 									<div class="edu-stats d-flex align-items-center" style="gap: 12px; flex-wrap: wrap;">
 										<div class="edu-stat-pill">
 											<i class="fa-solid fa-trophy" style="color: #a855f7;"></i>
-											<span>CGPA: <strong>8.42 / 10</strong></span>
-										</div>
-										<div class="edu-stat-pill">
-											<i class="fa-solid fa-laptop-code" style="color: #6366f1;"></i>
-											<span>Specialization: <strong>Data Analytics</strong></span>
+											<span>CGPA: <strong>8.24 / 10</strong></span>
 										</div>
 									</div>
 								</div>
@@ -603,10 +594,6 @@
 										<div class="edu-stat-pill edu-stat-green">
 											<i class="fa-solid fa-award" style="color: #10b981;"></i>
 											<span>Score: <strong>71%</strong></span>
-										</div>
-										<div class="edu-stat-pill edu-stat-green">
-											<i class="fa-solid fa-code" style="color: #34d399;"></i>
-											<span>Focus: <strong>Computer Science</strong></span>
 										</div>
 									</div>
 								</div>
@@ -654,26 +641,31 @@
 									<span class="tech-badge">SHAP</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="AI Crime Prediction & Safety Map"
-									data-description="SafeGuard Pro is a state-of-the-art AI-driven urban safety ecosystem designed to transform how citizens navigate and interact with their environment. By merging historical crime data with real-time predictive modeling, the platform provides proactive safety intelligence—from Safe Path navigation to tactical emergency response tools—ensuring that safety is a calculated choice rather than a reactive hope."
-									data-story="The heart of the platform is a sophisticated v2.4-Ensemble Engine. I developed a hybrid machine learning architecture that combines Random Forest and XGBoost to calculate localized risk scores with 90%+ precision. To handle the temporal nature of crime, I implemented an LSTM (Long Short-Term Memory) neural network that forecasts safety trends across 24-hour cycles.
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="AI Crime Prediction & Safety Map"
+										data-description="SafeGuard Pro is a state-of-the-art AI-driven urban safety ecosystem designed to transform how citizens navigate and interact with their environment. By merging historical crime data with real-time predictive modeling, the platform provides proactive safety intelligence—from Safe Path navigation to tactical emergency response tools—ensuring that safety is a calculated choice rather than a reactive hope."
+										data-story="The heart of the platform is a sophisticated v2.4-Ensemble Engine. I developed a hybrid machine learning architecture that combines Random Forest and XGBoost to calculate localized risk scores with 90%+ precision. To handle the temporal nature of crime, I implemented an LSTM (Long Short-Term Memory) neural network that forecasts safety trends across 24-hour cycles.
 
 One of the most complex challenges was building AI Explainability. Using SHAP (SHapley Additive exPlanations), the system doesn't just give a score; it explains why (e.g., High score due to historical frequency at this hour). For navigation, I integrated an OSRM (Open Source Routing Machine) and modified its cost function to prioritize Safety Corridors over the fastest route, creating a first-of-its-kind Safest Path algorithm."
-									data-problem="Traditional navigation tools prioritize speed over security, often leading users through high-risk areas to save a few seconds. Simultaneously, most safety apps are reactive, relying on user action after a threat is detected. There is a critical gap in tools that empower users with preemptive intelligence—the ability to visualize, anticipate, and avoid urban risks before they materialize."
-									data-tech="Backend: FastAPI (Python), SQLAlchemy, SQLite/Spatialite (for geospatial queries).
+										data-problem="Traditional navigation tools prioritize speed over security, often leading users through high-risk areas to save a few seconds. Simultaneously, most safety apps are reactive, relying on user action after a threat is detected. There is a critical gap in tools that empower users with preemptive intelligence—the ability to visualize, anticipate, and avoid urban risks before they materialize."
+										data-tech="Backend: FastAPI (Python), SQLAlchemy, SQLite/Spatialite (for geospatial queries).
 AI/ML: Scikit-Learn, XGBoost, TensorFlow (Keras), SHAP (Explainability), Pandas.
 Frontend: React.js, Vite, Tailwind CSS, Framer Motion (for premium UI animations).
 Mapping: Leaflet.js, OpenStreetMap API, OSRM.
 Security: OTP Authentication, SMTP Proxy for encrypted emergency alerts."
-									data-result="SafeGuard Pro successfully translates complex data into life-saving features:
+										data-result="SafeGuard Pro successfully translates complex data into life-saving features:
 
 Dynamic Risk Heatmaps: Real-time visualization of crime density and projected risk zones.
 AI Voice Shield & Tactical SOS: Hands-free emergency triggers that dispatch live GPS coordinates to trusted contacts.
 Smart Routing: Dual-mode navigation offering Fastest vs. Safest paths.
 Enterprise Insights: Dedicated modules for fleet tracking, property safety valuation, and shift optimization for workers in high-risk zones.">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/AI-Crime-Prediction-Safety-Map" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -705,31 +697,36 @@ Enterprise Insights: Dedicated modules for fleet tracking, property safety valua
 									<span class="tech-badge">FastAPI</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="My M C stays Project"
-									data-description="Smart PG Finder is an end-to-end ecosystem designed to revolutionize the way students and working professionals find, book, and live in Paying Guest (PG) accommodations. Unlike traditional listing sites, it bridges the gap between discovery and daily management by offering features like digital check-ins, automated rent tracking, maintenance requests, and even social lifestyle matching for roommates"
-									data-story="To solve these challenges, I built a scalable microservices-based architecture. The core Node.js backend acts as the central hub, utilizing Prisma ORM for type-safe interactions with a PostgreSQL database. I implemented a complex schema to manage multi-level entities (PGs → Floors → Beds) and a robust OTP-based authentication flow for security.
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="My M C stays Project"
+										data-description="Smart PG Finder is an end-to-end ecosystem designed to revolutionize the way students and working professionals find, book, and live in Paying Guest (PG) accommodations. Unlike traditional listing sites, it bridges the gap between discovery and daily management by offering features like digital check-ins, automated rent tracking, maintenance requests, and even social lifestyle matching for roommates"
+										data-story="To solve these challenges, I built a scalable microservices-based architecture. The core Node.js backend acts as the central hub, utilizing Prisma ORM for type-safe interactions with a PostgreSQL database. I implemented a complex schema to manage multi-level entities (PGs → Floors → Beds) and a robust OTP-based authentication flow for security.
 
 One of the most unique technical challenges was integrating a Python-based ML service to handle intelligent lifestyle matching, ensuring students are paired with roommates who share similar habits. I also integrated Socket.io for real-time messaging between owners and tenants, and PDFKit to automate the generation of digital rent receipts and stay agreements."
-									data-problem="The PG industry is often plagued by fragmentation and lack of trust. Users face:
+										data-problem="The PG industry is often plagued by fragmentation and lack of trust. Users face:
 
 Manual Processes: Booking and rent payments are often handled via informal cash transactions or messy chat threads.
 Verification Issues: Difficulty in verifying the quality of a PG and its facilities before moving in.
 Compatibility Friction: Living with strangers often leads to lifestyle conflicts (sleep cycles, cleanliness, etc.).
 Management Overload: PG owners struggle to track occupancy, manage maintenance issues, and split expenses across multiple properties."
-									data-tech="Frontend: React.js, Vite, Tailwind CSS (Responsive UI/UX).
+										data-tech="Frontend: React.js, Vite, Tailwind CSS (Responsive UI/UX).
 Backend: Node.js, TypeScript, Express.js (Core Logic).
 Database: PostgreSQL with Prisma ORM (Relational Data & Schema Management).
 ML Service: Python, FastAPI (Recommendation & Matching logic).
 Communication: Socket.io (Real-time Chat), Nodemailer (OTP & Email alerts).
 Tools: PDFKit (Receipt Generation), Multer (Image uploads), QRCode (Digital Check-ins)."
-									data-result="The result is a comprehensive platform that transforms PG living from a manual chore into a digital-first experience.
+										data-result="The result is a comprehensive platform that transforms PG living from a manual chore into a digital-first experience.
 
 For Users: A seamless journey from searching for lifestyle-compatible rooms to digital booking and automated rent payments.
 For Owners: A powerful dashboard to monitor occupancy, track leads (tours, callbacks), resolve maintenance issues via a ticketing system, and manage expenses across floors with full transparency.
 Scalability: The architecture is designed to handle multiple PGs and high concurrency, making it ready for real-world deployment.">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/Main-Character-Stays-Premium-MC-Stays" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -761,24 +758,29 @@ Scalability: The architecture is designed to handle multiple PGs and high concur
 									<span class="tech-badge">SQLite</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="Smart Cart Recommendation Engine"
-									data-description="SmartCart is an AI-powered e-commerce discovery platform designed to revolutionize how users find products. Unlike traditional keyword-based search engines, SmartCart leverages Machine Learning to understand user intent and provide hyper-relevant product recommendations. The application features a sleek, glassmorphic user interface, secure authentication, and a recommendation engine that suggests products based on semantic similarity."
-									data-story="In traditional e-commerce, users often struggle with Search Fatigue—scrolling through pages of irrelevant results because the search engine only looks for exact word matches. Small variations in phrasing or missing keywords can lead to zero results, even if the desired product exists. There was a need for a smarter system that understands the context of a user query and suggests products that are similar in nature, not just in name."
-									data-problem="The core of SmartCart is its Hybrid Search & Recommendation Engine. I implemented a Natural Language Processing (NLP) pipeline using TF-IDF (Term Frequency-Inverse Document Frequency) to vectorize product descriptions.
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="Smart Cart Recommendation Engine"
+										data-description="SmartCart is an AI-powered e-commerce discovery platform designed to revolutionize how users find products. Unlike traditional keyword-based search engines, SmartCart leverages Machine Learning to understand user intent and provide hyper-relevant product recommendations. The application features a sleek, glassmorphic user interface, secure authentication, and a recommendation engine that suggests products based on semantic similarity."
+										data-story="In traditional e-commerce, users often struggle with Search Fatigue—scrolling through pages of irrelevant results because the search engine only looks for exact word matches. Small variations in phrasing or missing keywords can lead to zero results, even if the desired product exists. There was a need for a smarter system that understands the context of a user query and suggests products that are similar in nature, not just in name."
+										data-problem="The core of SmartCart is its Hybrid Search & Recommendation Engine. I implemented a Natural Language Processing (NLP) pipeline using TF-IDF (Term Frequency-Inverse Document Frequency) to vectorize product descriptions.
 
 To provide real-time recommendations, I used a K-Nearest Neighbors (KNN) algorithm. When a user searches for a product, the system converts their input into a numerical vector and calculates the distance between that query and the entire product database. The result is a lightning-fast system that finds the closest matches based on product features, even if the exact keywords dont match. On the frontend, I prioritized a Premium UX, using CSS glassmorphism and smooth transitions to ensure the interface felt as modern as the AI powering it."
-									data-tech="Backend: Python, Flask (Robust and lightweight web framework)
+										data-tech="Backend: Python, Flask (Robust and lightweight web framework)
 AI/ML: Scikit-learn (KNN, TF-IDF), Pandas, NumPy, Pickle
 Database: SQLite3 (Efficient local data storage for user profiles)
 Frontend: HTML5, Vanilla CSS (Custom Design System, Glassmorphism, Google Fonts)
 DevOps: Git, GitHub (Version control and deployment readiness)"
-									data-result="Intelligent Discovery: Achieved a highly responsive recommendation system that provides relevant alternatives for every search query.
+										data-result="Intelligent Discovery: Achieved a highly responsive recommendation system that provides relevant alternatives for every search query.
 Seamless Auth: Implemented a secure user management system with SQLite, allowing for personalized shopping experiences.
 Modern Aesthetics: Developed a mobile-responsive, App-like web interface that significantly improves user retention and engagement compared to standard grid layouts.
 Performance: Optimized the ML model loading process using Pickle, ensuring that the heavy lifting is done once at startup, resulting in sub-100ms response times for recommendations.">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/SmartCart" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -810,15 +812,16 @@ Performance: Optimized the ML model loading process using Pickle, ensuring that 
 									<span class="tech-badge">Analytics</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="Orion Hardware Analytics"
-									data-description="This project involved building an end-to-end business intelligence solution for Orion Hardware, a regional retail chain. The goal was to consolidate siloed sales data into a single source of truth for executive decision-making and inventory control."
-									data-story="Orion Hardware is a Business Intelligence (BI) and Data Analytics project focused on sales performance and operational efficiency. It transforms raw sales data from a hardware superstore into actionable insights through SQL-based data modeling and an interactive PowerBI dashboard."
-									data-problem="Hardware retailers often struggle with Data Silos-where sales, profits, and regional performance are recorded but not connected.
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="Orion Hardware Analytics"
+										data-description="This project involved building an end-to-end business intelligence solution for Orion Hardware, a regional retail chain. The goal was to consolidate siloed sales data into a single source of truth for executive decision-making and inventory control."
+										data-story="Orion Hardware is a Business Intelligence (BI) and Data Analytics project focused on sales performance and operational efficiency. It transforms raw sales data from a hardware superstore into actionable insights through SQL-based data modeling and an interactive PowerBI dashboard."
+										data-problem="Hardware retailers often struggle with Data Silos-where sales, profits, and regional performance are recorded but not connected.
 
 The Challenge: Identifying which product categories are underperforming or which regions have the highest discount-to-profit leakages.
 The Need: A centralized system to visualize total sales vs. total profit across different segments (Consumer, Corporate, Home Office)."
-									data-tech="Data Extraction & Cleaning: The project begins with a superstore_db database where raw sales_data is ingested.
+										data-tech="Data Extraction & Cleaning: The project begins with a superstore_db database where raw sales_data is ingested.
 SQL Modeling: A series of optimized SQL queries (sales_analysis_queries.sql) are used to aggregate data. These queries calculate:
 Region-wise revenue distribution.
 Category-wise profit margins.
@@ -829,11 +832,15 @@ Database: MySQL / SQL Server (used for data structuring and extraction).
 Analytics: PowerBI (for DAX calculations, data modeling, and visual storytelling).
 Documentation: PDF-based reports for executive summaries.
 Scripting: SQL for backend data manipulation."
-									data-result="Interactive Dashboard: A live environment where users can filter by Region or Category to see real-time profit trends.
+										data-result="Interactive Dashboard: A live environment where users can filter by Region or Category to see real-time profit trends.
 Performance Metrics: Clear visibility into the top-performing segments (e.g., Corporate vs. Home Office).
 Strategic Insights: A data-backed understanding of how discount strategies affect overall profitability, allowing for better inventory and pricing decisions.">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/Orion-Hardware---Interactive-Power-BI-Dashboard/blob/main/Interactive%20PowerBI%20Dashboard.pdf" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -865,31 +872,36 @@ Strategic Insights: A data-backed understanding of how discount strategies affec
 									<span class="tech-badge">Vite</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="University Ranking Statistical Analysis"
-									data-description="Your project is a comprehensive analysis of World University Rankings, utilizing two primary datasets: the Times Higher Education rankings and the Center for World University Rankings (CWUR). It tracks the performance of thousands of institutions globally from 2011 to 2016, evaluating them across diverse dimensions such as teaching quality, research influence, and international outlook."
-									data-story="Educational institutions, policymakers, and students often face a data overload when trying to understand what makes a university truly world-class. The problem this project addresses is identifying the hidden correlations between institutional metrics. It answers critical questions like:
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="University Ranking Statistical Analysis"
+										data-description="Your project is a comprehensive analysis of World University Rankings, utilizing two primary datasets: the Times Higher Education rankings and the Center for World University Rankings (CWUR). It tracks the performance of thousands of institutions globally from 2011 to 2016, evaluating them across diverse dimensions such as teaching quality, research influence, and international outlook."
+										data-story="Educational institutions, policymakers, and students often face a data overload when trying to understand what makes a university truly world-class. The problem this project addresses is identifying the hidden correlations between institutional metrics. It answers critical questions like:
 
 Does high research output guarantee a top-tier rank?
 How much does industry income actually influence global standing?
 Which countries are consistently over-performing in higher education?"
-									data-problem="The technical journey of this project followed a rigorous data science workflow:
+										data-problem="The technical journey of this project followed a rigorous data science workflow:
 
 Data Wrangling: You performed significant cleaning, handling complex string formats (like removing % and ,), and coercing data into numeric formats for analysis.
 Imputation Strategy: Missing values in critical columns like income and num_students were handled using median imputation to maintain statistical integrity.
 Refinement: You standardized the world_rank column, transforming range-based strings (e.g., 301-350) into usable numerical data.
 Statistical Analysis: You executed a Pearson Correlation analysis, which mathematically proved that Research and Teaching are the strongest drivers of a university's total score.
 Interactive Evolution: The project evolved from static Jupyter Notebooks into a premium web dashboard, making the data accessible and interactive for non-technical users."
-									data-tech="Data Science Engine: Python, Pandas, and NumPy for heavy-duty data processing.
+										data-tech="Data Science Engine: Python, Pandas, and NumPy for heavy-duty data processing.
 Environment: Jupyter Notebooks for exploratory analysis.
 Business Intelligence: Power BI (.pbix) for professional-grade reporting.
 Web Frontend: Vite, Vanilla JavaScript, and modern CSS (implementing Glassmorphism for a premium feel).
 Visualizations: Chart.js for interactive graphs and PapaParse for real-time CSV data handling."
-									data-result="Key Insight: Discovered that Research influence (0.92 correlation) and Teaching quality (0.91 correlation) are the most critical factors for ranking, far outweighing international outlook.
+										data-result="Key Insight: Discovered that Research influence (0.92 correlation) and Teaching quality (0.91 correlation) are the most critical factors for ranking, far outweighing international outlook.
 Global Benchmarking: Successfully identified that while the USA and UK lead in institution counts, countries like Singapore and China show remarkably high average global scores.
 Integrated Platform: You have produced a multi-layered result consisting of a cleaned dataset, a detailed scientific notebook, a Power BI report, and a high-end interactive web application.">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/World-University-Ranking-Analysis" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -921,16 +933,17 @@ Integrated Platform: You have produced a multi-layered result consisting of a cl
 									<span class="tech-badge">Analytics</span>
 								</div>
 
-								<button class="btn btn-case-study view-case-study mt-2 w-100"
-									data-title="Revenue Analytics Dashboard"
-									data-description="The Revenue Analytics Dashboard is a data visualization solution designed to provide a 360-degree view of retail sales performance. By integrating transactional data with geographical and category-wise details, the dashboard empowers business owners to monitor financial health, track product performance, and identify growth opportunities across different Indian markets."
-									data-story="The project involved a comprehensive data pipeline and visualization strategy:
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="Revenue Analytics Dashboard"
+										data-description="The Revenue Analytics Dashboard is a data visualization solution designed to provide a 360-degree view of retail sales performance. By integrating transactional data with geographical and category-wise details, the dashboard empowers business owners to monitor financial health, track product performance, and identify growth opportunities across different Indian markets."
+										data-story="The project involved a comprehensive data pipeline and visualization strategy:
 
 Data Integration: Merged two complex datasets (Orders and Details) using Order ID as the primary key to establish a robust relational model.
 Data Transformation: Cleaned and structured data to ensure consistency in date formats and geographic naming (States/Cities).
 DAX Modeling: Developed custom DAX (Data Analysis Expressions) measures to calculate complex metrics such as Profit Margins, Average Order Value (AOV), and Year-over-Year (YoY) performance.
 Visual Engineering: Implemented a hierarchy-based design, allowing users to drill down from high-level categories (e.g., Electronics) to specific sub-categories (e.g., Printers) and individual cities."
-									data-problem="Modern retail businesses often generate large volumes of data spread across disparate files (orders, transaction details, customer lists). Without a centralized view, it is challenging to:
+										data-problem="Modern retail businesses often generate large volumes of data spread across disparate files (orders, transaction details, customer lists). Without a centralized view, it is challenging to:
 
 Identify which specific products or categories are driving losses despite high sales volume.
 Understand regional performance beyond simple totals.
@@ -939,14 +952,144 @@ Manually consolidate reports, which is time-consuming and prone to human error."
 Data Modeling: DAX (Data Analysis Expressions)
 Data Sources: CSV / Flat Files (Orders & Details)
 Visualizations: Interactive Maps, Clustered Bar Charts, Tree Maps, and KPI Cards."
-									data-result="The final interactive dashboard successfully provides:
+										data-result="The final interactive dashboard successfully provides:
 
 Instant Profit Insights: Highlighting that while some categories like Electronics have high revenue, others like Furniture might face lower margins due to specific sub-category costs.
 Market Mapping: A clear visual representation of sales concentration in major hubs like Maharashtra and Madhya Pradesh.
 Payment Optimization: Data-driven evidence showing the dominance of COD and UPI, helping the business optimize its payment gateway and logistics strategy.
 Efficient Reporting: A 90% reduction in time spent on monthly sales analysis through automated data refreshing and dynamic filtering">
-									View Case Study
-								</button>
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii/Revenue-Analytics-Dashboard" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="hackathon-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Hackathons</h1>
+					<h2 class="mb-4">Hackathons &amp; Challenges</h2>
+					<p style="color: var(--text-muted);">Demonstrating rapid prototyping, AI agent development, and competitive data science under strict timelines.</p>
+				</div>
+			</div>
+
+			<div class="row d-flex align-items-stretch">
+				<!-- Challenge 1: Catalyst AI Hackathon -->
+				<div class="col-md-6 mb-4 d-flex ftco-animate">
+					<div class="hackathon-card hackathon-catalyst glass-card w-100 d-flex flex-column justify-content-between">
+						<div>
+							<div class="d-flex justify-content-between align-items-center mb-3">
+								<span class="edu-type-badge postgraduate" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.15)); border: 1px solid rgba(168, 85, 247, 0.35); color: #dfd8ff;">
+									<i class="fa-solid fa-robot mr-1"></i>Agentic AI Challenge
+								</span>
+								<span style="font-size: 12px; font-weight: 700; color: var(--text-muted);"><i class="fa-regular fa-calendar-days mr-1"></i>April 2026</span>
+							</div>
+							
+							<h2 style="font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 5px;">Catalyst AI Hackathon</h2>
+							<p class="institution mb-3" style="font-weight: 600; font-size: 14px; color: var(--accent-color);">
+								<i class="fa-solid fa-trophy mr-1"></i>Organized by Deccan AI
+							</p>
+							
+							<div style="border-left: 3px solid var(--accent-color); padding-left: 15px; margin-bottom: 20px;">
+								<h4 style="font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px;">Problem: AI-Powered Talent Scouting Agent</h4>
+								<p style="color: var(--text-muted); font-size: 13.5px; line-height: 1.6; margin-bottom: 0;">
+									Developed an autonomous AI agent to automate candidate scouting and outreach. The agent parses JDs, matches candidates (with explainability), engages them conversationally to assess interest, and outputs a combined ranked shortlist.
+								</p>
+							</div>
+
+							<ul class="pl-0" style="list-style: none;">
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: var(--accent-color);">•</span>
+									<strong>Semantic Matching:</strong> Implemented semantic parsing and scoring for high-accuracy candidate mapping.
+								</li>
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: var(--accent-color);">•</span>
+									<strong>Simulated Outreach:</strong> Designed a conversational logic component to simulate interview-style screening.
+								</li>
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: var(--accent-color);">•</span>
+									<strong>Dual-Scoring Engine:</strong> Ranked candidates on a composite metric of Match Score and Interest Score.
+								</li>
+							</ul>
+						</div>
+
+						<div class="mt-4">
+							<div class="tech-pills mb-3">
+								<span class="tech-badge">Agentic AI</span>
+								<span class="tech-badge">NLP</span>
+								<span class="tech-badge">Semantic Search</span>
+								<span class="tech-badge">Scoring Models</span>
+								<span class="tech-badge">System Design</span>
+							</div>
+							<div class="d-flex gap-2" style="gap: 10px;">
+								<a href="https://github.com/hackathon-deccan-ai" target="_blank" class="btn btn-case-study mt-0 py-2 px-3 d-inline-flex align-items-center" style="font-size: 12px !important; border-radius: 8px !important;">
+									<i class="fa-brands fa-github mr-2"></i>View Organization
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Challenge 2: AnaVerse 2.0 Kaggle Challenge -->
+				<div class="col-md-6 mb-4 d-flex ftco-animate">
+					<div class="hackathon-card hackathon-anaverse glass-card w-100 d-flex flex-column justify-content-between">
+						<div>
+							<div class="d-flex justify-content-between align-items-center mb-3">
+								<span class="edu-type-badge undergraduate" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(52, 211, 153, 0.12)); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7;">
+									<i class="fa-solid fa-chart-line mr-1"></i>Kaggle Competition
+								</span>
+								<span style="font-size: 12px; font-weight: 700; color: var(--text-muted);"><i class="fa-regular fa-calendar-days mr-1"></i>January 2026</span>
+							</div>
+							
+							<h2 style="font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 5px;">AnaVerse 2.0 Kaggle Challenge</h2>
+							<p class="institution mb-3" style="font-weight: 600; font-size: 14px; color: #2dd4bf;">
+								<i class="fa-solid fa-award mr-1"></i>Data Science Hiring Drive • Top 30% Rank
+							</p>
+							
+							<div style="border-left: 3px solid #10b981; padding-left: 15px; margin-bottom: 20px;">
+								<h4 style="font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px;">Problem: Industrial Sensor Anomaly Prediction</h4>
+								<p style="color: var(--text-muted); font-size: 13.5px; line-height: 1.6; margin-bottom: 0;">
+									Built a predictive machine learning pipeline during a 24-hour Kaggle competition to detect plant machinery anomalies using temporal sensor data (X1 to X5 sensors).
+								</p>
+							</div>
+
+							<ul class="pl-0" style="list-style: none;">
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: #10b981;">•</span>
+									<strong>Data Preprocessing:</strong> Handled missing values, removed noise, and engineered correlation features from raw signal telemetry.
+								</li>
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: #10b981;">•</span>
+									<strong>Comparative Modeling:</strong> Evaluated classical models against advanced ensembles (XGBoost, LightGBM, CatBoost, Random Forest) with fine-tuning.
+								</li>
+								<li class="mb-2" style="position: relative; padding-left: 20px; color: var(--text-muted); line-height: 1.5; font-size: 13.5px;">
+									<span style="position: absolute; left: 0; top: 1px; color: #10b981;">•</span>
+									<strong>Evaluation:</strong> Achieved a top 30% leaderboard finish by optimizing Precision, Recall, and F1 Score.
+								</li>
+							</ul>
+						</div>
+
+						<div class="mt-4">
+							<div class="tech-pills mb-3">
+								<span class="tech-badge">Tabular Data ML</span>
+								<span class="tech-badge">XGBoost &amp; CatBoost</span>
+								<span class="tech-badge">Feature Engineering</span>
+								<span class="tech-badge">Anomaly Detection</span>
+								<span class="tech-badge">Model Evaluation</span>
+							</div>
+							<div class="d-flex gap-2" style="gap: 10px;">
+								<span class="btn btn-case-study mt-0 py-2 px-3 d-inline-flex align-items-center" style="font-size: 12px !important; border-radius: 8px !important; border-color: #10b981 !important; color: #6ee7b7 !important; cursor: default;">
+									<i class="fa-solid fa-ranking-star mr-2"></i>Top 30% Rank
+								</span>
 							</div>
 						</div>
 					</div>
