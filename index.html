@@ -615,7 +615,52 @@
 				</div>
 			</div>
 			<div class="row d-flex align-items-stretch">
-				<!-- Project 1: SafeGuard Pro -->
+				<!-- Project 1: Talent Pool Search -->
+				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="50">
+					<div class="blog-entry glass-card project-card project-privacy d-flex flex-column w-100" style="height: 100%;">
+						<a href="https://github.com/amitsomvanshii" target="_blank"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/talent-pool.png'); height: 220px; border-radius: 16px;"></a>
+						<div class="text mt-3 d-flex flex-column justify-content-between flex-grow-1">
+							<div>
+								<h3 class="heading" style="font-size: 18px; font-weight: 800;"><a
+										href="https://github.com/amitsomvanshii"
+										target="_blank">Talent Pool Search</a></h3>
+								<p
+									style="color: var(--text-muted); font-size: 14px; line-height: 1.6; min-height: 72px;">
+									Privacy-first AI resume parser dashboard that extracts and scrubs candidate contact details locally before structured AI analysis.</p>
+							</div>
+							<div>
+								<!-- Tech Pills -->
+								<div class="tech-pills mb-3">
+									<span class="tech-badge">Next.js 16</span>
+									<span class="tech-badge">React</span>
+									<span class="tech-badge">Tailwind v4</span>
+									<span class="tech-badge">Gemini AI</span>
+									<span class="tech-badge">Supabase</span>
+									<span class="tech-badge">AWS S3</span>
+								</div>
+
+								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
+									<button class="btn btn-case-study view-case-study m-0 w-50"
+										data-title="Talent Pool Search: Privacy-First AI Resume Parser"
+										data-description="Talent Pool Search is a recruiter dashboard designed to process, analyze, and index stacks of resumes. Instead of dumping raw resumes directly into external AI models (which leaks private contact details), the app uses a local PII privacy pipeline that extracts contact details locally and scrubs them before running structured AI analysis. The result is a secure, searchable talent pool matching resumes with candidates without compromising privacy."
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Key Challenges in Resume Screening</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Searchability Deficit:</strong> Stacks of resumes sit static in folders, making it impossible to search by skills, locations, or experience levels in a unified view.</li><li class='mb-2'><strong>Data Privacy Leakage:</strong> Copying and pasting raw resumes directly into third-party AI APIs (like OpenAI or Gemini) shares sensitive Personal Identifiable Information (PII) like phone numbers, emails, and address links with external companies.</li><li class='mb-2'><strong>Inaccurate Extractions:</strong> Simple regex or naive AI prompt structures fail to accurately isolate professional work experience from academic timelines, projects, or career breaks.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Our Technical Approach</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Local Extraction &amp; Scrubbing:</strong> When a file (PDF/Word) is uploaded, our Node.js backend extracts raw text. A local regex pipeline immediately extracts the candidate&apos;s name, email, phone number, and social links to save them in our database. The main text is then scrubbed, replacing all PII values with generic placeholders ([EMAIL], [PHONE], etc.).</li><li class='mb-2'><strong>Anonymized AI Processing:</strong> The scrubbed, anonymous text is sent to the Google Gemini API. The model evaluates only professional attributes (skills, job titles, locations, and durations) and outputs structured JSON metadata.</li><li class='mb-2'><strong>Smart Heuristic Fallbacks:</strong> Built a fully local heuristics fallback engine to calculate years of experience strictly from sorted work intervals inside the &apos;Experience&apos; section, ignoring school/projects and detecting career breaks.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Technical Architecture</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Frontend Framework:</strong> Next.js 16 (React, Tailwind CSS v4, Vanilla CSS variables) for an interactive UI.</li><li class='mb-2'><strong>Database &amp; Storage:</strong> Supabase PostgreSQL (Postgres Table + Indexes + Client API) and AWS S3 for secure, private resume downloads.</li><li class='mb-2'><strong>AI Orchestration:</strong> Google Gemini 1.5 Flash (via @google/generative-ai) for extraction.</li><li class='mb-2'><strong>Document Parsers:</strong> unpdf (PDF text extractor) and mammoth (Word/Docx extractor).</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Key Outcomes &amp; Capabilities</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>100% PII Compliance:</strong> Candidate contact info is completely stripped before sending payloads. Recruiters can view side-by-side Scrubbed AI Payload vs Raw Recruiter Text modals to verify security.</li><li class='mb-2'><strong>Advanced Dashboard &amp; Slicers:</strong> A spreadsheet table view (&apos;Quick Sheet&apos;) alongside a grid dashboard enables fast scans, with logical AND multi-skill queries and range experience selectors.</li><li class='mb-2'><strong>Career Break Loggers:</strong> The dashboard displays visual alert logs marking gaps in candidate career timelines (e.g., 3 months break).</li></ul>">
+										View Case Study
+									</button>
+									<a href="https://github.com/amitsomvanshii" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
+										<i class="fa-brands fa-github mr-2"></i>Source Code
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 2: SafeGuard Pro -->
 				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="100">
 					<div class="blog-entry glass-card project-card project-ai d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/AI-Crime-Prediction-Safety-Map" target="_blank"
@@ -643,23 +688,12 @@
 
 								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
 									<button class="btn btn-case-study view-case-study m-0 w-50"
-										data-title="AI Crime Prediction & Safety Map"
+										data-title="AI Crime Prediction &amp; Safety Map"
 										data-description="SafeGuard Pro is a state-of-the-art AI-driven urban safety ecosystem designed to transform how citizens navigate and interact with their environment. By merging historical crime data with real-time predictive modeling, the platform provides proactive safety intelligence—from Safe Path navigation to tactical emergency response tools—ensuring that safety is a calculated choice rather than a reactive hope."
-										data-story="The heart of the platform is a sophisticated v2.4-Ensemble Engine. I developed a hybrid machine learning architecture that combines Random Forest and XGBoost to calculate localized risk scores with 90%+ precision. To handle the temporal nature of crime, I implemented an LSTM (Long Short-Term Memory) neural network that forecasts safety trends across 24-hour cycles.
-
-One of the most complex challenges was building AI Explainability. Using SHAP (SHapley Additive exPlanations), the system doesn't just give a score; it explains why (e.g., High score due to historical frequency at this hour). For navigation, I integrated an OSRM (Open Source Routing Machine) and modified its cost function to prioritize Safety Corridors over the fastest route, creating a first-of-its-kind Safest Path algorithm."
-										data-problem="Traditional navigation tools prioritize speed over security, often leading users through high-risk areas to save a few seconds. Simultaneously, most safety apps are reactive, relying on user action after a threat is detected. There is a critical gap in tools that empower users with preemptive intelligence—the ability to visualize, anticipate, and avoid urban risks before they materialize."
-										data-tech="Backend: FastAPI (Python), SQLAlchemy, SQLite/Spatialite (for geospatial queries).
-AI/ML: Scikit-Learn, XGBoost, TensorFlow (Keras), SHAP (Explainability), Pandas.
-Frontend: React.js, Vite, Tailwind CSS, Framer Motion (for premium UI animations).
-Mapping: Leaflet.js, OpenStreetMap API, OSRM.
-Security: OTP Authentication, SMTP Proxy for encrypted emergency alerts."
-										data-result="SafeGuard Pro successfully translates complex data into life-saving features:
-
-Dynamic Risk Heatmaps: Real-time visualization of crime density and projected risk zones.
-AI Voice Shield & Tactical SOS: Hands-free emergency triggers that dispatch live GPS coordinates to trusted contacts.
-Smart Routing: Dual-mode navigation offering Fastest vs. Safest paths.
-Enterprise Insights: Dedicated modules for fleet tracking, property safety valuation, and shift optimization for workers in high-risk zones.">
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Critical Shortcomings in Navigation</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Speed over Safety:</strong> Traditional navigation tools prioritize speed over security, often leading users through high-risk areas to save a few seconds.</li><li class='mb-2'><strong>Reactive Solutions:</strong> Most safety apps are reactive, relying on user action after a threat is detected rather than providing preemptive intelligence.</li><li class='mb-2'><strong>Lack of Spatial-Temporal Analysis:</strong> Crime density changes by time of day, but normal maps do not factor in hourly risk trends when planning routes.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Developing the Safest Path Engine</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>v2.4-Ensemble Risk Scoring:</strong> Developed a hybrid machine learning architecture combining Random Forest and XGBoost to calculate localized risk scores with 90%+ precision.</li><li class='mb-2'><strong>Temporal Forecasting:</strong> Implemented an LSTM (Long Short-Term Memory) neural network to forecast safety trends across 24-hour cycles.</li><li class='mb-2'><strong>AI Explainability with SHAP:</strong> Integrated SHAP (SHapley Additive exPlanations) so the system explains the underlying features causing a high risk score.</li><li class='mb-2'><strong>Geospatial Routing Modification:</strong> Integrated an OSRM (Open Source Routing Machine) and customized its routing cost function to prioritize Safety Corridors.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Technological Stack</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Backend API:</strong> FastAPI (Python), SQLAlchemy, and SQLite/Spatialite for spatial databases.</li><li class='mb-2'><strong>Machine Learning:</strong> Scikit-Learn, XGBoost, TensorFlow (Keras), SHAP, and Pandas.</li><li class='mb-2'><strong>Frontend Web Application:</strong> React.js, Vite, Tailwind CSS, and Framer Motion.</li><li class='mb-2'><strong>Mapping Services:</strong> Leaflet.js, OpenStreetMap API, and OSRM (Open Source Routing Machine).</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Delivered Capabilities</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Dynamic Risk Heatmaps:</strong> Real-time visualization of crime density and projected risk zones for any selected hour.</li><li class='mb-2'><strong>AI Voice Shield &amp; SOS:</strong> Hands-free emergency triggers that dispatch live GPS coordinates to trusted contacts.</li><li class='mb-2'><strong>Safest Routing:</strong> Dual-mode navigation offering comparison between the Fastest vs. Safest paths.</li><li class='mb-2'><strong>Enterprise Modules:</strong> Fleet tracking and shift optimization for logistics workers operating in high-risk zones.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/AI-Crime-Prediction-Safety-Map" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -671,7 +705,7 @@ Enterprise Insights: Dedicated modules for fleet tracking, property safety valua
 					</div>
 				</div>
 
-				<!-- Project 2: MC stays -->
+				<!-- Project 3: MC stays -->
 				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="150">
 					<div class="blog-entry glass-card project-card project-accommodation d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/Main-Character-Stays-Premium-MC-Stays"
@@ -699,28 +733,12 @@ Enterprise Insights: Dedicated modules for fleet tracking, property safety valua
 
 								<div class="d-flex" style="gap: 10px; margin-top: 15px;">
 									<button class="btn btn-case-study view-case-study m-0 w-50"
-										data-title="My M C stays Project"
-										data-description="Smart PG Finder is an end-to-end ecosystem designed to revolutionize the way students and working professionals find, book, and live in Paying Guest (PG) accommodations. Unlike traditional listing sites, it bridges the gap between discovery and daily management by offering features like digital check-ins, automated rent tracking, maintenance requests, and even social lifestyle matching for roommates"
-										data-story="To solve these challenges, I built a scalable microservices-based architecture. The core Node.js backend acts as the central hub, utilizing Prisma ORM for type-safe interactions with a PostgreSQL database. I implemented a complex schema to manage multi-level entities (PGs → Floors → Beds) and a robust OTP-based authentication flow for security.
-
-One of the most unique technical challenges was integrating a Python-based ML service to handle intelligent lifestyle matching, ensuring students are paired with roommates who share similar habits. I also integrated Socket.io for real-time messaging between owners and tenants, and PDFKit to automate the generation of digital rent receipts and stay agreements."
-										data-problem="The PG industry is often plagued by fragmentation and lack of trust. Users face:
-
-Manual Processes: Booking and rent payments are often handled via informal cash transactions or messy chat threads.
-Verification Issues: Difficulty in verifying the quality of a PG and its facilities before moving in.
-Compatibility Friction: Living with strangers often leads to lifestyle conflicts (sleep cycles, cleanliness, etc.).
-Management Overload: PG owners struggle to track occupancy, manage maintenance issues, and split expenses across multiple properties."
-										data-tech="Frontend: React.js, Vite, Tailwind CSS (Responsive UI/UX).
-Backend: Node.js, TypeScript, Express.js (Core Logic).
-Database: PostgreSQL with Prisma ORM (Relational Data & Schema Management).
-ML Service: Python, FastAPI (Recommendation & Matching logic).
-Communication: Socket.io (Real-time Chat), Nodemailer (OTP & Email alerts).
-Tools: PDFKit (Receipt Generation), Multer (Image uploads), QRCode (Digital Check-ins)."
-										data-result="The result is a comprehensive platform that transforms PG living from a manual chore into a digital-first experience.
-
-For Users: A seamless journey from searching for lifestyle-compatible rooms to digital booking and automated rent payments.
-For Owners: A powerful dashboard to monitor occupancy, track leads (tours, callbacks), resolve maintenance issues via a ticketing system, and manage expenses across floors with full transparency.
-Scalability: The architecture is designed to handle multiple PGs and high concurrency, making it ready for real-world deployment.">
+										data-title="M C Stays | AI Accommodation Platform"
+										data-description="Smart PG Finder (M C Stays) is an end-to-end ecosystem designed to revolutionize the way students and working professionals find, book, and live in Paying Guest (PG) accommodations. Unlike traditional listing sites, it bridges the gap between discovery and daily management by offering features like digital check-ins, automated rent tracking, maintenance requests, and even social lifestyle matching for roommates."
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Friction in Accommodation Booking</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Manual Rent Tracking:</strong> Booking and rent payments are often handled via informal cash transactions or messy chat threads.</li><li class='mb-2'><strong>No Roommate Compatibility:</strong> Living with strangers often leads to lifestyle conflicts (sleep cycles, cleanliness, habits).</li><li class='mb-2'><strong>Management Overload:</strong> PG owners struggle to track occupancy, manage maintenance requests, and split expenses across properties.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Building a Microservices Architecture</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Central Hub Node.js API:</strong> Acts as the main router, using Prisma ORM to model PGs &rarr; Floors &rarr; Beds cleanly.</li><li class='mb-2'><strong>Machine Learning Recommendations:</strong> Integrates a Python FastAPI recommendation service to calculate lifestyle compatibility scores and match compatible roommates.</li><li class='mb-2'><strong>Real-time Messaging &amp; Utilities:</strong> Implemented Socket.io for direct tenant-owner communications, PDFKit for automated receipts, and QR Codes for digital check-ins.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Tech Stack</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Frontend:</strong> React.js, Vite, Tailwind CSS (Mobile-responsive UI/UX).</li><li class='mb-2'><strong>Backend Services:</strong> Node.js, Express.js (TypeScript) &amp; Python FastAPI (for ML recommender).</li><li class='mb-2'><strong>Database:</strong> PostgreSQL with Prisma ORM.</li><li class='mb-2'><strong>Communication &amp; Tooling:</strong> Socket.io (real-time chat), Nodemailer, PDFKit, and QRCode.</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>System Outcomes</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>For Tenants:</strong> Smooth search, automated digital payments, and instant roommate compatibility matching.</li><li class='mb-2'><strong>For Owners:</strong> Comprehensive owner dashboard to monitor occupancy, track leads, organize maintenance tickets, and audit expenses with full transparency.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/Main-Character-Stays-Premium-MC-Stays" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -732,7 +750,7 @@ Scalability: The architecture is designed to handle multiple PGs and high concur
 					</div>
 				</div>
 
-				<!-- Project 3: Smart Cart -->
+				<!-- Project 4: Smart Cart -->
 				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="200">
 					<div class="blog-entry glass-card project-card project-ecommerce d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/SmartCart" target="_blank"
@@ -762,19 +780,10 @@ Scalability: The architecture is designed to handle multiple PGs and high concur
 									<button class="btn btn-case-study view-case-study m-0 w-50"
 										data-title="Smart Cart Recommendation Engine"
 										data-description="SmartCart is an AI-powered e-commerce discovery platform designed to revolutionize how users find products. Unlike traditional keyword-based search engines, SmartCart leverages Machine Learning to understand user intent and provide hyper-relevant product recommendations. The application features a sleek, glassmorphic user interface, secure authentication, and a recommendation engine that suggests products based on semantic similarity."
-										data-story="In traditional e-commerce, users often struggle with Search Fatigue—scrolling through pages of irrelevant results because the search engine only looks for exact word matches. Small variations in phrasing or missing keywords can lead to zero results, even if the desired product exists. There was a need for a smarter system that understands the context of a user query and suggests products that are similar in nature, not just in name."
-										data-problem="The core of SmartCart is its Hybrid Search & Recommendation Engine. I implemented a Natural Language Processing (NLP) pipeline using TF-IDF (Term Frequency-Inverse Document Frequency) to vectorize product descriptions.
-
-To provide real-time recommendations, I used a K-Nearest Neighbors (KNN) algorithm. When a user searches for a product, the system converts their input into a numerical vector and calculates the distance between that query and the entire product database. The result is a lightning-fast system that finds the closest matches based on product features, even if the exact keywords dont match. On the frontend, I prioritized a Premium UX, using CSS glassmorphism and smooth transitions to ensure the interface felt as modern as the AI powering it."
-										data-tech="Backend: Python, Flask (Robust and lightweight web framework)
-AI/ML: Scikit-learn (KNN, TF-IDF), Pandas, NumPy, Pickle
-Database: SQLite3 (Efficient local data storage for user profiles)
-Frontend: HTML5, Vanilla CSS (Custom Design System, Glassmorphism, Google Fonts)
-DevOps: Git, GitHub (Version control and deployment readiness)"
-										data-result="Intelligent Discovery: Achieved a highly responsive recommendation system that provides relevant alternatives for every search query.
-Seamless Auth: Implemented a secure user management system with SQLite, allowing for personalized shopping experiences.
-Modern Aesthetics: Developed a mobile-responsive, App-like web interface that significantly improves user retention and engagement compared to standard grid layouts.
-Performance: Optimized the ML model loading process using Pickle, ensuring that the heavy lifting is done once at startup, resulting in sub-100ms response times for recommendations.">
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Search Fatigue Challenge</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Keyword Rigidity:</strong> Traditional keyword search fails when synonyms are used or when spelling isn&apos;t exact.</li><li class='mb-2'><strong>Cold Start &amp; Speed:</strong> Finding similar items among 50,000+ data points can lead to database lags or high computational loads.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Building the Recommendation Pipeline</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>TF-IDF Vectorization:</strong> Implemented an NLP pipeline that extracts description attributes and vectorizes them using TF-IDF.</li><li class='mb-2'><strong>K-Nearest Neighbors (KNN):</strong> Developed a KNN distance scoring script to query and rank the top matching alternatives.</li><li class='mb-2'><strong>Fast Serialization:</strong> Serialized models using Pickle to bypass training loads at request time, achieving sub-100ms response.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Technical Architecture</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Backend:</strong> Python Flask serving ML inference.</li><li class='mb-2'><strong>Machine Learning:</strong> Scikit-learn (KNN, TF-IDF), Pandas, and NumPy.</li><li class='mb-2'><strong>Storage:</strong> SQLite3 for secure, lightweight user and product profile databases.</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Project Accomplishments</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Responsive Suggestions:</strong> Instantly fetches alternative suggestions within 100ms.</li><li class='mb-2'><strong>Premium Glassmorphic UI:</strong> Designed a modern, responsive layout that boosts user interaction rates.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/SmartCart" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -786,7 +795,7 @@ Performance: Optimized the ML model loading process using Pickle, ensuring that 
 					</div>
 				</div>
 
-				<!-- Project 4: Orion Hardware -->
+				<!-- Project 5: Orion Hardware -->
 				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="250">
 					<div class="blog-entry glass-card project-card project-analytics d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/Orion-Hardware---Interactive-Power-BI-Dashboard/blob/main/Interactive%20PowerBI%20Dashboard.pdf"
@@ -816,25 +825,10 @@ Performance: Optimized the ML model loading process using Pickle, ensuring that 
 									<button class="btn btn-case-study view-case-study m-0 w-50"
 										data-title="Orion Hardware Analytics"
 										data-description="This project involved building an end-to-end business intelligence solution for Orion Hardware, a regional retail chain. The goal was to consolidate siloed sales data into a single source of truth for executive decision-making and inventory control."
-										data-story="Orion Hardware is a Business Intelligence (BI) and Data Analytics project focused on sales performance and operational efficiency. It transforms raw sales data from a hardware superstore into actionable insights through SQL-based data modeling and an interactive PowerBI dashboard."
-										data-problem="Hardware retailers often struggle with Data Silos-where sales, profits, and regional performance are recorded but not connected.
-
-The Challenge: Identifying which product categories are underperforming or which regions have the highest discount-to-profit leakages.
-The Need: A centralized system to visualize total sales vs. total profit across different segments (Consumer, Corporate, Home Office)."
-										data-tech="Data Extraction & Cleaning: The project begins with a superstore_db database where raw sales_data is ingested.
-SQL Modeling: A series of optimized SQL queries (sales_analysis_queries.sql) are used to aggregate data. These queries calculate:
-Region-wise revenue distribution.
-Category-wise profit margins.
-The direct impact of discounts on the bottom line.
-Visualization: The processed data is then linked to a PowerBI Desktop (.pbix) file, which creates a dynamic, multi-page dashboard.
-💻 The Tech Stack
-Database: MySQL / SQL Server (used for data structuring and extraction).
-Analytics: PowerBI (for DAX calculations, data modeling, and visual storytelling).
-Documentation: PDF-based reports for executive summaries.
-Scripting: SQL for backend data manipulation."
-										data-result="Interactive Dashboard: A live environment where users can filter by Region or Category to see real-time profit trends.
-Performance Metrics: Clear visibility into the top-performing segments (e.g., Corporate vs. Home Office).
-Strategic Insights: A data-backed understanding of how discount strategies affect overall profitability, allowing for better inventory and pricing decisions.">
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Business Challenge</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Disconnect:</strong> Sales performance, discounts, and regional revenues were split across separate databases.</li><li class='mb-2'><strong>Profit Leakage Identification:</strong> Difficulty in isolating underperforming product categories or discount levels eroding margins.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Building the Analysis Pipeline</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Database Integration:</strong> Structured regional transaction databases inside a MySQL environment.</li><li class='mb-2'><strong>SQL Aggregations:</strong> Wrote optimized relational SQL scripts to merge tables and measure key performance metrics.</li><li class='mb-2'><strong>Data Modeling with DAX:</strong> Implemented calculated columns and measures in Power BI for dynamic margin reporting.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Tool Suite</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Modeling:</strong> MySQL, SQL Server, and relational database schemas.</li><li class='mb-2'><strong>Reporting:</strong> Power BI Desktop (utilizing DAX, interactive slicers, and tree maps).</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Key Business Results</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Centralized Dashboard:</strong> Dynamic filters to scan regional profits and sales structures instantly.</li><li class='mb-2'><strong>Margin Optimization:</strong> Highlighted discount zones that were leaking cash, supporting inventory adjustments.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/Orion-Hardware---Interactive-Power-BI-Dashboard/blob/main/Interactive%20PowerBI%20Dashboard.pdf" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -846,7 +840,7 @@ Strategic Insights: A data-backed understanding of how discount strategies affec
 					</div>
 				</div>
 
-				<!-- Project 5: World University Ranking -->
+				<!-- Project 6: World University Ranking -->
 				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="300">
 					<div class="blog-entry glass-card project-card project-research d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/World-University-Ranking-Analysis" target="_blank"
@@ -876,26 +870,10 @@ Strategic Insights: A data-backed understanding of how discount strategies affec
 									<button class="btn btn-case-study view-case-study m-0 w-50"
 										data-title="University Ranking Statistical Analysis"
 										data-description="Your project is a comprehensive analysis of World University Rankings, utilizing two primary datasets: the Times Higher Education rankings and the Center for World University Rankings (CWUR). It tracks the performance of thousands of institutions globally from 2011 to 2016, evaluating them across diverse dimensions such as teaching quality, research influence, and international outlook."
-										data-story="Educational institutions, policymakers, and students often face a data overload when trying to understand what makes a university truly world-class. The problem this project addresses is identifying the hidden correlations between institutional metrics. It answers critical questions like:
-
-Does high research output guarantee a top-tier rank?
-How much does industry income actually influence global standing?
-Which countries are consistently over-performing in higher education?"
-										data-problem="The technical journey of this project followed a rigorous data science workflow:
-
-Data Wrangling: You performed significant cleaning, handling complex string formats (like removing % and ,), and coercing data into numeric formats for analysis.
-Imputation Strategy: Missing values in critical columns like income and num_students were handled using median imputation to maintain statistical integrity.
-Refinement: You standardized the world_rank column, transforming range-based strings (e.g., 301-350) into usable numerical data.
-Statistical Analysis: You executed a Pearson Correlation analysis, which mathematically proved that Research and Teaching are the strongest drivers of a university's total score.
-Interactive Evolution: The project evolved from static Jupyter Notebooks into a premium web dashboard, making the data accessible and interactive for non-technical users."
-										data-tech="Data Science Engine: Python, Pandas, and NumPy for heavy-duty data processing.
-Environment: Jupyter Notebooks for exploratory analysis.
-Business Intelligence: Power BI (.pbix) for professional-grade reporting.
-Web Frontend: Vite, Vanilla JavaScript, and modern CSS (implementing Glassmorphism for a premium feel).
-Visualizations: Chart.js for interactive graphs and PapaParse for real-time CSV data handling."
-										data-result="Key Insight: Discovered that Research influence (0.92 correlation) and Teaching quality (0.91 correlation) are the most critical factors for ranking, far outweighing international outlook.
-Global Benchmarking: Successfully identified that while the USA and UK lead in institution counts, countries like Singapore and China show remarkably high average global scores.
-Integrated Platform: You have produced a multi-layered result consisting of a cleaned dataset, a detailed scientific notebook, a Power BI report, and a high-end interactive web application.">
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Identifying Institutional Drivers</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Complexity:</strong> The presence of mixed string/integer columns and missing values in metrics like income, ranks, and student numbers made direct analysis difficult.</li><li class='mb-2'><strong>Ambiguity in Rankings:</strong> Need to discover mathematical correlations behind what separates top-tier institutions from average performers.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Technical Execution</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Wrangling &amp; Imputation:</strong> Handled dirty data formats, cleaned numeric fields, and implemented median imputation logic for missing values.</li><li class='mb-2'><strong>Pearson Correlation Analysis:</strong> Calculated correlations showing that Research influence and Teaching quality are the primary score drivers.</li><li class='mb-2'><strong>Interactive Dashboard Building:</strong> Transformed Jupyter Notebook results into a beautiful Web dashboard featuring dynamic layouts.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Stack</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Engine:</strong> Python, Pandas, and NumPy for wrangling.</li><li class='mb-2'><strong>Visualization:</strong> Power BI Desktop and a custom Vite-based Chart.js web interface.</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Analysis Insights</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Key Drivers Discovered:</strong> Confirmed that Research influence (0.92 correlation) and Teaching quality (0.91 correlation) are the dominant factors.</li><li class='mb-2'><strong>Geographic Benchmarking:</strong> Identified that Singapore and China show very high average performance growth.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/World-University-Ranking-Analysis" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -907,8 +885,8 @@ Integrated Platform: You have produced a multi-layered result consisting of a cl
 					</div>
 				</div>
 
-				<!-- Project 6: Revenue Analytics Dashboard -->
-				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="150">
+				<!-- Project 7: Revenue Analytics Dashboard -->
+				<div class="col-md-4 mb-4 d-flex ftco-animate" data-aos="zoom-in" data-aos-delay="350">
 					<div class="blog-entry glass-card project-card project-revenue d-flex flex-column w-100" style="height: 100%;">
 						<a href="https://github.com/amitsomvanshii/Revenue-Analytics-Dashboard" target="_blank"
 							class="block-20 zoom-effect"
@@ -937,27 +915,10 @@ Integrated Platform: You have produced a multi-layered result consisting of a cl
 									<button class="btn btn-case-study view-case-study m-0 w-50"
 										data-title="Revenue Analytics Dashboard"
 										data-description="The Revenue Analytics Dashboard is a data visualization solution designed to provide a 360-degree view of retail sales performance. By integrating transactional data with geographical and category-wise details, the dashboard empowers business owners to monitor financial health, track product performance, and identify growth opportunities across different Indian markets."
-										data-story="The project involved a comprehensive data pipeline and visualization strategy:
-
-Data Integration: Merged two complex datasets (Orders and Details) using Order ID as the primary key to establish a robust relational model.
-Data Transformation: Cleaned and structured data to ensure consistency in date formats and geographic naming (States/Cities).
-DAX Modeling: Developed custom DAX (Data Analysis Expressions) measures to calculate complex metrics such as Profit Margins, Average Order Value (AOV), and Year-over-Year (YoY) performance.
-Visual Engineering: Implemented a hierarchy-based design, allowing users to drill down from high-level categories (e.g., Electronics) to specific sub-categories (e.g., Printers) and individual cities."
-										data-problem="Modern retail businesses often generate large volumes of data spread across disparate files (orders, transaction details, customer lists). Without a centralized view, it is challenging to:
-
-Identify which specific products or categories are driving losses despite high sales volume.
-Understand regional performance beyond simple totals.
-Track payment preferences (e.g., COD vs. UPI) and their impact on cash flow.
-Manually consolidate reports, which is time-consuming and prone to human error." data-tech="Business Intelligence: Power BI Desktop
-Data Modeling: DAX (Data Analysis Expressions)
-Data Sources: CSV / Flat Files (Orders & Details)
-Visualizations: Interactive Maps, Clustered Bar Charts, Tree Maps, and KPI Cards."
-										data-result="The final interactive dashboard successfully provides:
-
-Instant Profit Insights: Highlighting that while some categories like Electronics have high revenue, others like Furniture might face lower margins due to specific sub-category costs.
-Market Mapping: A clear visual representation of sales concentration in major hubs like Maharashtra and Madhya Pradesh.
-Payment Optimization: Data-driven evidence showing the dominance of COD and UPI, helping the business optimize its payment gateway and logistics strategy.
-Efficient Reporting: A 90% reduction in time spent on monthly sales analysis through automated data refreshing and dynamic filtering">
+										data-problem="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>The Retail Sales Challenge</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Siloed Reports:</strong> Transactional orders and details files were disconnected, preventing unified profit auditing.</li><li class='mb-2'><strong>Drill-down Gaps:</strong> Inability to examine underperforming product subcategories inside high-performing parent departments.</li></ul>"
+										data-story="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Wrangling and Dashboarding</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Data Merging:</strong> Combined transaction details using Order ID. Cleaned region structures.</li><li class='mb-2'><strong>DAX Logic:</strong> Developed metrics measuring profit margins, average order value, and year-over-year gains.</li><li class='mb-2'><strong>Visual Engineering:</strong> Built hierarchy-based views for drilling down into subcategories and regions.</li></ul>"
+										data-tech="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>BI Suite</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Power BI Desktop:</strong> Wrote DAX logic and styled maps/KPI cards.</li></ul>"
+										data-result="<h5 class='modal-subheading' style='color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px;'>Key Achievements</h5><ul style='padding-left: 20px; color: var(--text-muted); font-size: 14px;'><li class='mb-2'><strong>Instant Profitability Mapping:</strong> Highlights high revenue sections versus actual profit margins across Indian states.</li><li class='mb-2'><strong>Reporting Efficiency:</strong> Automated visual refresh loops, cutting monthly report analysis overhead by 90%.</li></ul>">
 										View Case Study
 									</button>
 									<a href="https://github.com/amitsomvanshii/Revenue-Analytics-Dashboard" target="_blank" class="btn btn-case-study m-0 w-50 d-flex align-items-center justify-content-center" style="text-decoration: none;">
@@ -1404,11 +1365,11 @@ Efficient Reporting: A 90% reduction in time spent on monthly sales analysis thr
 				const result = $(this).data('result');
 
 				$('#modalTitle').text(title);
-				$('#modalDescription').text(description);
-				$('#modalProblem').text(problem);
-				$('#modalStory').text(story);
-				$('#modalTech').text(tech);
-				$('#modalResult').text(result);
+				$('#modalDescription').html(description);
+				$('#modalProblem').html(problem);
+				$('#modalStory').html(story);
+				$('#modalTech').html(tech);
+				$('#modalResult').html(result);
 
 				$('#caseStudyModal').modal('show');
 			});
